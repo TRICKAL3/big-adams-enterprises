@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Big Adams Enterprise Marketplace</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Big Adams Enterprise Marketplace</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="search-section">
+            <input type="text" id="search-bar" placeholder="Search for products...">
+            <button onclick="searchProducts()">Search</button>
+        </section>
+        
+        <section class="latest-offers">
+            <h2>Products</h2>
+            <div class="offers-container">
+                <div class="offer" data-name="Black Ghana Hoodie" data-price="120">
+                    <img src="a.jpg" alt="Product 1">
+                    <p>Black Ghana Hoodie - GHS 120</p>
+                    <button onclick="addToCart('Black Ghana Hoodie', 120)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Women Local Slides" data-price="80">
+                    <img src="b.jpg" alt="Product 2">
+                    <p>Women Local Slides - GHS 80</p>
+                    <button onclick="addToCart('Women Local Slides', 80)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Women Local Slides" data-price="80">
+                    <img src="c.jpg" alt="Product 3">
+                    <p>Women Local Slides - GHS 80</p>
+                    <button onclick="addToCart('Women Local Slides', 80)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 20" data-price="200">
+                    <img src="99.jpg" alt="Product 20">
+                    <p>Product 20 - GHS 200</p>
+                    <button onclick="addToCart('Product 20', 200)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 4" data-price="50">
+                    <img src="d.jpg" alt="Product 4">
+                    <p>Product 4 - GHS 50</p>
+                    <button onclick="addToCart('Product 4', 50)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 5" data-price="60">
+                    <img src="e.jpg" alt="Product 5">
+                    <p>Product 5 - GHS 60</p>
+                    <button onclick="addToCart('Product 5', 60)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 6" data-price="70">
+                    <img src="f.jpg" alt="Product 6">
+                    <p>Product 6 - GHS 70</p>
+                    <button onclick="addToCart('Product 6', 70)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 7" data-price="90">
+                    <img src="g.jpg" alt="Product 7">
+                    <p>Product 7 - GHS 90</p>
+                    <button onclick="addToCart('Product 7', 90)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 8" data-price="100">
+                    <img src="h.jpg" alt="Product 8">
+                    <p>Product 8 - GHS 100</p>
+                    <button onclick="addToCart('Product 8', 100)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 9" data-price="110">
+                    <img src="i.jpg" alt="Product 9">
+                    <p>Product 9 - GHS 110</p>
+                    <button onclick="addToCart('Product 9', 110)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 10" data-price="120">
+                    <img src="j.jpg" alt="Product 10">
+                    <p>Product 10 - GHS 120</p>
+                    <button onclick="addToCart('Product 10', 120)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 11" data-price="130">
+                    <img src="k.jpg" alt="Product 11">
+                    <p>Product 11 - GHS 130</p>
+                    <button onclick="addToCart('Product 11', 130)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 12" data-price="140">
+                    <img src="11.jpg" alt="Product 12">
+                    <p>Product 12 - GHS 140</p>
+                    <button onclick="addToCart('Product 12', 140)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 13" data-price="150">
+                    <img src="22.jpg" alt="Product 13">
+                    <p>Product 13 - GHS 150</p>
+                    <button onclick="addToCart('Product 13', 150)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 14" data-price="160">
+                    <img src="33.jpg" alt="Product 14">
+                    <p>Product 14 - GHS 160</p>
+                    <button onclick="addToCart('Product 14', 160)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 15" data-price="170">
+                    <img src="44.jpg" alt="Product 15">
+                    <p>Product 15 - GHS 170</p>
+                    <button onclick="addToCart('Product 15', 170)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 16" data-price="180">
+                    <img src="55.jpg" alt="Product 16">
+                    <p>Product 16 - GHS 180</p>
+                    <button onclick="addToCart('Product 16', 180)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 17" data-price="190">
+                    <img src="66.jpg" alt="Product 17">
+                    <p>Product 17 - GHS 190</p>
+                    <button onclick="addToCart('Product 17', 190)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 18" data-price="200">
+                    <img src="77.jpg" alt="Product 18">
+                    <p>Product 18 - GHS 200</p>
+                    <button onclick="addToCart('Product 18', 200)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 19" data-price="210">
+                    <img src="88.jpg" alt="Product 19">
+                    <p>Product 19 - GHS 210</p>
+                    <button onclick="addToCart('Product 19', 210)">Add to Cart</button>
+                </div>
+                <div class="offer" data-name="Product 20" data-price="220">
+                    <img src="99.jpg" alt="Product 20">
+                    <p>Product 20 - GHS 220</p>
+                    <button onclick="addToCart('Product 20', 220)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <p>Phone: +233 54127 1670</p>
+                <p>Email: info@big-adams.com</p>
+            </div>
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>We are proud to showcase the vibrant culture and craftsmanship of the region through our diverse collection of authentic indigenous goods. From delicious agrifoods and aromatic herbs to handcrafted treasures and nourishing essential oils, we offer a unique selection that celebrates the rich heritage of Northern Ghana.</p>
+                <p><strong>Experience the True Flavor of Northern Ghana:</strong></p>
+                <ul>
+                    <li>Discover a world of fresh, locally sourced agrifoods: Explore our selection of fresh produce, nuts, seeds, and traditional snacks, all bursting with authentic flavors.</li>
+                    <li>Embrace the healing power of nature: Immerse yourself in the therapeutic world of herbs and essential oils, sourced directly from the heart of Northern Ghana.</li>
+                    <li>Admire the artistry of handcrafted treasures: Find exquisite, handcrafted items that showcase the talent and creativity of local artisans.</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function searchProducts() {
+            const searchBar = document.getElementById('search-bar');
+            const searchTerm = searchBar.value.toLowerCase();
+            const offers = document.getElementsByClassName('offer');
+
+            for (let i = 0; i < offers.length; i++) {
+                const productName = offers[i].dataset.name.toLowerCase();
+                if (productName.includes(searchTerm)) {
+                    offers[i].style.display = 'block';
+                } else {
+                    offers[i].style.display = 'none';
+                }
+            }
+        }
+
+        function addToCart(productName, productPrice) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const product = { name: productName, price: productPrice };
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(productName + ' has been added to your cart.');
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+          await Clerk.load();
+          Clerk.mountSignInButton("#sign-in-button");
+        });
+      </script>
+      <div id="sign-in-button"></div>
+      
+</body>
+</html>
